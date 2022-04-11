@@ -5,7 +5,7 @@ let input = fs.readFileSync('./input.txt').toString().split('\n');
 let n = Number(input[0]);
 let arr = [];
 for (let i = 1; i <= n; i++) {
-  arr.push(input[i].split(' '));
+  arr.push(input[i].split(' ').map(Number));
 }
 arr.sort((a, b) => {
   if (a[1] != b[1]) return a[1] - b[1];
@@ -22,5 +22,3 @@ for (let i = 1; i < n; i++) {
 }}
 
 console.log(count);
-
-// 해법은 맞는데 답이 이상한 것 같다. 나중에 확인 
