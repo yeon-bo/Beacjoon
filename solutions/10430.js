@@ -8,5 +8,6 @@ let c = parseInt(line[2]);
 
 console.log(parseInt((a+b)%c))
 console.log(parseInt(((a%c) + (b%c))%c))
+
 console.log(parseInt((a*b)%c))
 console.log(parseInt(((a%c) * (b%c))%c))
